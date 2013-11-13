@@ -126,7 +126,6 @@ sub _eat_data_one_mb {
     finish => $self->{processed_size},
     hash   => sha256($$dataref)
     };
-  p($self->{tree});
   $self->{processed_size}++;
 }
 
